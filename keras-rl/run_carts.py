@@ -22,4 +22,4 @@ def go_cart(link, max_steps, nb):
     dqn.test(env, nb_episodes=nb, visualize=True)
 
 
-go_cart('keras-rl/saved_models/model_pickle.obj', max_steps=2000, nb=10)
+go_cart('keras-rl/saved_models/model_test.obj', max_steps=2000, nb=10)
