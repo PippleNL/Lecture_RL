@@ -12,10 +12,11 @@ from rl.agents.dqn import DQNAgent
 from rl.policy import LinearAnnealedPolicy, SoftmaxPolicy, EpsGreedyQPolicy, GreedyQPolicy, BoltzmannQPolicy, MaxBoltzmannQPolicy, BoltzmannGumbelQPolicy
 from rl.memory import SequentialMemory
 
-ENV_NAME = 'CartPole-v0'
+import pickle
+pickle_model = pickle.load(open('keras-rl/model_pickle.obj', 'rb'))
 
 # Get the environment and extract the number of actions available in the Cartpole problem
-env = gym.make(ENV_NAME)
+env = gym.make('CartPole-v0')
 env._max_episode_steps = 500
 np.random.seed(123)
 env.seed(123)
@@ -37,4 +38,5 @@ dqn.compile(Adam(lr=1e-3), metrics=['mae'])
 # Okay, now it's time to learn something! We visualize the training here for show, but this slows down training quite a lot.
 dqn.fit(env, nb_steps=10000, visualize=False, verbose=2)
 
-dqn.test(env, nb_episodes=50, nb_max_episode_steps=1000, visualize=True)
+dqn.test(env, nb_episodes=10, visualize=True)
+
