@@ -1,0 +1,17 @@
+2020-02-20 09:09:43,412 DEBUG   MainThread:10884 [wandb_config.py:_load_defaults():119] no defaults not found in config-defaults.yaml
+2020-02-20 09:09:43,428 DEBUG   MainThread:10884 [meta.py:setup():94] code probe starting
+2020-02-20 09:09:43,428 DEBUG   MainThread:10884 [meta.py:setup():98] non time limited probe of code
+2020-02-20 09:09:43,459 DEBUG   MainThread:10884 [util.py:is_cygwin_git():314] Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Het systeem kan het opgegeven bestand niet vinden', None, 2, None)
+2020-02-20 09:09:43,459 DEBUG   MainThread:10884 [git_repo.py:repo():30] git repository is invalid
+2020-02-20 09:09:43,459 DEBUG   MainThread:10884 [meta.py:_setup_code_program():58] scan for untracked program
+2020-02-20 09:09:43,459 DEBUG   MainThread:10884 [meta.py:setup():116] code probe done
+2020-02-20 09:09:43,459 DEBUG   MainThread:10884 [run_manager.py:__init__():536] Initialized sync for keras-rl/94zygpbt
+2020-02-20 09:09:43,475 INFO    MainThread:10884 [run_manager.py:wrap_existing_process():1134] wrapping existing process 3276
+2020-02-20 09:09:43,475 DEBUG   MainThread:10884 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): pypi.org:443
+2020-02-20 09:09:43,553 DEBUG   MainThread:10884 [connectionpool.py:_make_request():437] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 41171
+2020-02-20 09:09:43,616 INFO    MainThread:10884 [run_manager.py:init_run():919] system metrics and metadata threads started
+2020-02-20 09:09:43,616 INFO    MainThread:10884 [run_manager.py:wrap_existing_process():1151] informing user process we are ready to proceed
+2020-02-20 09:09:43,616 INFO    MainThread:10884 [run_manager.py:_sync_etc():1258] entering loop for messages from user process
+2020-02-20 09:09:44,444 INFO    Thread-7  :10884 [run_manager.py:_on_file_modified():683] file/dir modified: C:\Users\LennartvanHam\Documents\Cart_Pole\wandb\run-20200220_080942-94zygpbt\config.yaml
+2020-02-20 09:11:23,510 DEBUG   raven-sentry.BackgroundWorker:10884 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): sentry.io:443
+t_Pole\wandb\run-20200220_080942-94zygpbt\config.yaml
