@@ -178,7 +178,6 @@ class EpsGreedyQPolicy(Policy):
         config['eps'] = self.eps
         return config
 
-
 class GreedyQPolicy(Policy):
     """Implement the greedy policy
 
@@ -196,7 +195,6 @@ class GreedyQPolicy(Policy):
         assert q_values.ndim == 1
         action = np.argmax(q_values)
         return action
-
 
 class BoltzmannQPolicy(Policy):
     """Implement the Boltzmann Q Policy
@@ -237,7 +235,6 @@ class BoltzmannQPolicy(Policy):
         config['tau'] = self.tau
         config['clip'] = self.clip
         return config
-
 
 class MaxBoltzmannQPolicy(Policy):
     """
@@ -288,7 +285,6 @@ class MaxBoltzmannQPolicy(Policy):
         config['tau'] = self.tau
         config['clip'] = self.clip
         return config
-
 
 class BoltzmannGumbelQPolicy(Policy):
     """Implements Boltzmann-Gumbel exploration (BGE) adapted for Q learning
